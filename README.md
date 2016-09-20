@@ -7,11 +7,17 @@ Hit first SUBMIT button. After saving your phone number and API URL you have to 
 
 If there are any SMS in your inbox from that sender and the API is correct, all SMS of that number will be sent to your server.
 
-This App sends data using POST method and the key is "message". Sample PHP code: http://ideone.com/cTtFwm
-This code returns always a JSON object. That object contains two keys. They are "success" and "message" key. "success" is a boolean type value and "message" is a string.
-This type of respose should send to App.
+This App sends data using POST method and the key is "message". Format: 
 
 {
-"success" : false,
-"message" : "Data NOT received by server"
+
+   "message" : ARRAY_OF_STRING
+
+}
+
+Sample PHP code: http://ideone.com/cTtFwm This code returns always a JSON object. That object contains two keys. They are "success" and "message" key. "success" is a Boolean type value and "message" is a string. This type of response should send to App.
+
+{ 
+    "success" : false, 
+    "message" : "Data NOT received by server" 
 }
