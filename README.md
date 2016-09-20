@@ -17,7 +17,9 @@ This App sends data using POST method and the key is "message". Format:
 
 Sample PHP code: http://ideone.com/cTtFwm This code returns always a JSON object. That object contains two keys. They are "success" and "message" key. "success" is a Boolean type value and "message" is a string. This type of response should send to App.
 
-{ 
-     "success" : false, 
-     "message" : "Data NOT received by server" 
+{
+
+      "success" : true,
+      "message" : "Data received by server"
+
 }
